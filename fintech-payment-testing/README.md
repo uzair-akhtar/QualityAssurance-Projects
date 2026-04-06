@@ -1,17 +1,17 @@
 # 💳 Fintech Payment Gateway Testing
 
-**Project Type:** Domain-Specific Testing — Digital Payments  
+**Project Type:** Domain-Specific Testing - Digital Payments  
 **Tools Used:** Excel (Test Cases), Postman (API Validation)  
-**Domain:** Fintech — Payment Gateways, Card Transactions, Digital Wallets  
+**Domain:** Fintech - Payment Gateways, Card Transactions, Digital Wallets  
 **Status:** ✅ Complete
 
 ---
 
 ## 📌 Project Overview
 
-This project demonstrates QA thinking applied to a payment gateway system — the type of software used by banks, telecom companies, and financial institutions to process card transactions, digital transfers, and mobile wallet payments.
+This project demonstrates QA thinking applied to a payment gateway system - the type of software used by banks, telecom companies, and financial institutions to process card transactions, digital transfers, and mobile wallet payments.
 
-The goal was to design a comprehensive set of test cases covering the complete payment lifecycle: from a customer initiating a transaction all the way through to the bank's approval or decline response. Special attention was given to negative testing, boundary conditions, and security scenarios — because in Fintech, a missed edge case doesn't just break a feature, it can cause financial loss or expose sensitive data.
+The goal was to design a comprehensive set of test cases covering the complete payment lifecycle: from a customer initiating a transaction all the way through to the bank's approval or decline response. Special attention was given to negative testing, boundary conditions, and security scenarios - because in Fintech, a missed edge case doesn't just break a feature, it can cause financial loss or expose sensitive data.
 
 This project is hypothetical/practice-based, modelled after real-world payment gateway testing patterns.
 
@@ -31,7 +31,7 @@ Customer → Payment Gateway → Payment Switch → Card Network → Issuer Bank
 Customer ← Payment Gateway ← Payment Switch ← Card Network ← Approve/Decline
 ```
 
-This project tests the Payment Gateway layer — validating that the correct request is sent, the correct response is processed, and the correct outcome is shown to the user.
+This project tests the Payment Gateway layer - validating that the correct request is sent, the correct response is processed, and the correct outcome is shown to the user.
 
 ---
 
@@ -48,19 +48,19 @@ fintech-payment-testing/
 
 ## 🧪 Testing Modules Covered
 
-**Module 1 — Successful Transaction (Happy Path):** Valid card, sufficient balance, correct CVV and expiry — confirms the full end-to-end approval flow works correctly.
+**Module 1 - Successful Transaction (Happy Path):** Valid card, sufficient balance, correct CVV and expiry - confirms the full end-to-end approval flow works correctly.
 
-**Module 2 — Card Validation:** Tests invalid card numbers, expired cards, wrong CVV, wrong expiry date, and unsupported card types.
+**Module 2 - Card Validation:** Tests invalid card numbers, expired cards, wrong CVV, wrong expiry date, and unsupported card types.
 
-**Module 3 — Insufficient Funds:** Confirms the system correctly declines transactions when the account balance is below the transaction amount.
+**Module 3 - Insufficient Funds:** Confirms the system correctly declines transactions when the account balance is below the transaction amount.
 
-**Module 4 — Duplicate Transaction Detection:** Tests whether the system prevents a second identical transaction within a short time window — critical for preventing double-charging.
+**Module 4 - Duplicate Transaction Detection:** Tests whether the system prevents a second identical transaction within a short time window - critical for preventing double-charging.
 
-**Module 5 — Timeout and Network Failure:** What happens when the network drops mid-transaction? Does the system handle it gracefully without deducting funds?
+**Module 5 - Timeout and Network Failure:** What happens when the network drops mid-transaction? Does the system handle it gracefully without deducting funds?
 
-**Module 6 — Refund and Reversal Flow:** Tests the complete refund process — initiating a refund, verifying funds are returned, and confirming the transaction status updates correctly.
+**Module 6 - Refund and Reversal Flow:** Tests the complete refund process - initiating a refund, verifying funds are returned, and confirming the transaction status updates correctly.
 
-**Module 7 — Security Testing (Basic):** Checks that card numbers are masked in responses, that sensitive data is not exposed in error messages, and that basic injection attempts are handled safely.
+**Module 7 - Security Testing (Basic):** Checks that card numbers are masked in responses, that sensitive data is not exposed in error messages, and that basic injection attempts are handled safely.
 
 ---
 
