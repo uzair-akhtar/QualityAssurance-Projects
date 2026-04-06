@@ -1,4 +1,4 @@
-# 🧪 QA Portfolio — Uzair Akhtar
+# 🧪 QA Portfolio - Uzair Akhtar
 
 **Quality Assurance Engineer | Manual Testing · API Testing · Fintech Domain**
 
