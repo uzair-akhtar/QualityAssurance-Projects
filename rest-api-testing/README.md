@@ -1,8 +1,8 @@
-# 🔌 REST API Testing — ReqRes Public API
+# 🔌 REST API Testing - ReqRes Public API
 
 **Project Type:** API Testing  
 **Tools Used:** Postman  
-**API Under Test:** [ReqRes.in](https://reqres.in) — A hosted REST API for testing  
+**API Under Test:** [ReqRes.in](https://reqres.in) - A hosted REST API for testing  
 **Status:** ✅ Complete
 
 ---
@@ -11,7 +11,7 @@
 
 This project demonstrates structured API testing against the ReqRes public REST API. The goal was to validate all four core HTTP methods (GET, POST, PUT, DELETE), verify correct status codes, and confirm the integrity of request/response payloads including headers and JSON structures.
 
-ReqRes simulates a real user management backend — making it an ideal sandbox for practising the same testing techniques used in production Fintech and SaaS applications.
+ReqRes simulates a real user management backend - making it an ideal sandbox for practising the same testing techniques used in production Fintech and SaaS applications.
 
 ---
 
@@ -19,10 +19,10 @@ ReqRes simulates a real user management backend — making it an ideal sandbox f
 
 The testing covered the complete CRUD lifecycle of a user resource:
 
-**GET** — Retrieving lists and individual user records, verifying pagination and correct data fields.  
-**POST** — Creating new users and verifying the server returns a 201 Created response with the correct body.  
-**PUT** — Updating existing records and confirming the response reflects the changes.  
-**DELETE** — Removing a resource and verifying the server returns 204 No Content with an empty body.
+**GET** - Retrieving lists and individual user records, verifying pagination and correct data fields.  
+**POST** - Creating new users and verifying the server returns a 201 Created response with the correct body.  
+**PUT** - Updating existing records and confirming the response reflects the changes.  
+**DELETE** - Removing a resource and verifying the server returns 204 No Content with an empty body.
 
 Beyond the happy path, I tested negative scenarios including invalid endpoints (404), missing required fields (400), and unauthorized access (401).
 
@@ -51,7 +51,7 @@ rest-api-testing/
 **Step 1:** Install [Postman](https://www.postman.com/downloads/) if you haven't already.  
 **Step 2:** Open Postman → click **Import** → select `postman-collection.json` from this folder.  
 **Step 3:** Click **Run Collection** to execute all requests automatically.  
-**Step 4:** Review the test results in the Postman Runner — all assertions are written as test scripts inside each request.
+**Step 4:** Review the test results in the Postman Runner - all assertions are written as test scripts inside each request.
 
 ---
 
@@ -71,4 +71,4 @@ rest-api-testing/
 
 ## 💡 Key Learnings
 
-Through this project I learned to write Postman test scripts using `pm.test()` to automatically assert status codes, response times, and JSON body values — moving beyond manual validation into lightweight automation. I also learned that validating the *structure* of a JSON response (not just the status code) is critical, because an API can return 200 but still send wrong or missing data fields.
+Through this project I learned to write Postman test scripts using `pm.test()` to automatically assert status codes, response times, and JSON body values - moving beyond manual validation into lightweight automation. I also learned that validating the *structure* of a JSON response (not just the status code) is critical, because an API can return 200 but still send wrong or missing data fields.
